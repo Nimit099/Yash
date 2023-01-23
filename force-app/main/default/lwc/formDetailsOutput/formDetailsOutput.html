@@ -1,0 +1,56 @@
+<!-- =======================================================================================
+MV Clouds Private Limited
+Author:Yash Shah
+Change Version History
+Version No.     Author                 Date                        Change Description   
+    1         Yash Shah              11-01-2023                         create
+========================================================================================== -->
+<template>
+    <!-- *********************** start form details output main div ******************** -->
+    <div class="form-details-output-main">
+        <div class="form-details-output" style="margin-top: 50px;">
+            <div class="form-title">
+                <b>Test Form</b> 
+            </div>
+            <!-- start show sample progress bar -->
+            <div class="progres-bar" >
+                <!-- <div if:true={acctrue}>
+                    <lightning-progress-bar value="50" size="large"></lightning-progress-bar>
+                </div>
+                <div >
+                    <lightning-progress-indicator current-step="2" type="path" variant="base">
+                        <lightning-progress-step label="Page 1" value="1"></lightning-progress-step>
+                        <lightning-progress-step label="Page 2" value="2"></lightning-progress-step>
+                    </lightning-progress-indicator>
+                </div>
+                <div if:true={acctrue}>
+                    <lightning-progress-indicator current-step="2">
+                        <lightning-progress-step label="Page 1" value="1"></lightning-progress-step>
+                        <lightning-progress-step label="Page 2" value="2"></lightning-progress-step>
+                    </lightning-progress-indicator>
+                </div> -->
+                <c-progress-indicator></c-progress-indicator>
+            </div>
+            <!-- end show sample progress bar -->
+            <div class="form-page">
+                <div class="page-name"><b>Second Page</b></div>
+                <!-- start show sample captcha  -->
+                <div class="page-Captcha"> 
+                    <c-captcha-type></c-captcha-type>
+                </div>
+                <!-- end show sample captcha  -->
+            </div>
+            <div class="form-details-output-button">
+                <div class="test">
+                <!-- <div class="form-details-output-button-1"><b>Cancel</b></div>
+                <div class="form-details-output-button-1"><b>Submit</b></div> -->
+                <div class="form-details-output-button-1">
+                    <input class="qf-standard-button" type="button" value="Cancel" name="Cancel" />
+                    <input class="qf-standard-button" type="button" value="Next" name="Next" />
+                </div>
+             </div>
+            </div>
+        </div>
+    </div>
+    <!-- *********************** end form details output main div ******************** -->
+</template>

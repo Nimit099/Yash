@@ -1,0 +1,17 @@
+<template>
+    <div>
+        <p class="captcha-label"><b> Captcha </b></p>
+        <div class="captcha-main-div">
+            <div class="slide-captcha" style="user-select:none;">
+                <span class="slide-text">I am not a robot</span>
+                <div if:true={RightCaptcha}>
+                    <div class="captcha4-done"> Captcha Verified </div>
+                    <aura:set attribute="else">
+                        <div class="slide-block">GO!</div>
+                    </aura:set>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</template>

@@ -1,0 +1,96 @@
+<!-- =======================================================================================
+MV Clouds Private Limited
+Author:Yash Shah
+Change Version History
+Version No.     Author                 Date                        Change Description   
+    1         Yash Shah              11-01-2023                         create
+========================================================================================== -->
+<template>
+    <!-- ***********************start div new form details******************** -->
+        <div class="form-details">
+            <div class="form-details-titel">
+                <p class="form-details-titel-1">Form Details</p>
+            </div>
+            <!-- start input filed div -->
+            <div class="form-details-input">
+                <div class="input_field">
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-col slds-size_5-of-12">
+                            <label class="input_field-label"><samp>* </samp>Form Title</label>
+                        </div>
+                        <div class="slds-col slds-size_1-of-12">
+                            :
+                          </div>
+                          <div class="slds-col slds-size_6-of-12">
+                            <input class="input_field-input-box" onchange={changeFormTitle} type="text" name="form_title" required>
+                          </div>
+                    </div>
+                </div>
+                <div class="input_field">
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-col slds-size_5-of-12">
+                            <label class="input_field-label">Description</label>
+                        </div>
+                        <div class="slds-col slds-size_1-of-12">
+                            :
+                          </div>
+                          <div class="slds-col slds-size_6-of-12">
+                            <input class="input_field-input-box"  type="text" name="description">
+                            <!-- <textarea class="input_field-input-box" name="description"></textarea> -->
+                          </div>
+                    </div>
+                </div>
+                <div class="input_field">
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-col slds-size_5-of-12">
+                            <label class="input_field-label">Progress Indicator <lightning-helptext content="You'll receive weekly updates"></lightning-helptext></label>
+                        </div>
+                        <div class="slds-col slds-size_1-of-12">
+                            :
+                        </div>
+                        <div class="slds-col slds-size_6-of-12">
+                            <select class="input_field-input-box" onchange={changeProgressIndicator}>
+                                <option value="Select">Select</option>
+                                <template for:each={records.data} for:item="rec">
+                                    <option key={rec} value={rec.DeveloperName}>{rec.MasterLabel}</option>
+                                </template>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="input_field">
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-col slds-size_5-of-12">
+                            <label class="input_field-label">Captcha Type <lightning-helptext content="You'll receive weekly updates"></lightning-helptext></label>
+                        </div>
+                        <div class="slds-col slds-size_1-of-12">
+                            :
+                          </div>
+                          <div class="slds-col slds-size_6-of-12">
+                            <select class="input_field-input-box" onchange={changeCaptchaType}>
+                                <option value="Select">Select</option>
+                                <template for:each={captcharecords.data} for:item="cap_rec">
+                                    <option key={cap_rec} value={cap_rec.DeveloperName}>{cap_rec.MasterLabel}</option>
+                                </template>
+                            </select>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end input filed div -->
+            <!-- start new form details button div -->
+            <div class="form-details-button">
+                <div class="form-details-cancel-button">
+                    <input class="qf-standard-button" type="button" value="Cancel" name="Cancel" />
+                </div>
+                <div class="form-details-next-button">
+                    <input class="qf-standard-button" type="button" value="Next" name="Next" />
+                </div>
+                <!-- <div class="form-details-next-button">
+                    <input type="button" value="Save" name="Save" />
+                </div> -->
+            </div>
+            <!-- end new form details button div -->
+        </div>
+    <!-- ***********************end div new form details******************** -->
+</template>

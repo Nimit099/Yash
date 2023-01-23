@@ -1,0 +1,49 @@
+<template>
+    <div class="test">
+        <img style="max-width:85%;max-height:90%; height: 100px; width: 100px;" src={salesforceImageUrl_2} alt="Captcha Image"/>
+    </div>
+  
+  <div class="slds-form-element">
+      <div class="slds-form-element__control">
+        <!-- <lightning-input  type="checkbox" value="option1" data-id="checkbox" label="Astro" onchange={handleSelection}></lightning-input>
+        <lightning-input  type="checkbox" value="option2" data-id="checkbox" label="Ruth the Elephant" onchange={handleSelection}></lightning-input>
+        <lightning-input  type="checkbox" value="option3" data-id="checkbox" label="Einstein" onchange={handleSelection}></lightning-input> -->
+        <span class="slds-radio">
+            <input type="radio" id="radio-61" value="1" data-id="checkbox" name="default" onchange={handleSelection} />
+            <label class="slds-radio__label" for="radio-61">
+              <span class="slds-radio_faux"></span>
+              <span class="slds-form-element__label">Car</span>
+            </label>
+          </span>
+          <span class="slds-radio">
+            <input type="radio" id="radio-62" value="2" data-id="checkbox" name="default" onchange={handleSelection} />
+            <label class="slds-radio__label" for="radio-62">
+              <span class="slds-radio_faux"></span>
+              <span class="slds-form-element__label">Bike</span>
+            </label>
+          </span>
+          <span class="slds-radio">
+            <input type="radio" id="radio-63" value="3" data-id="checkbox" name="default" onchange={handleSelection} />
+            <label class="slds-radio__label" for="radio-63">
+              <span class="slds-radio_faux"></span>
+              <span class="slds-form-element__label">Leptop</span>
+            </label>
+          </span>
+          <span class="slds-radio">
+            <input type="radio" id="radio-64" value="4" data-id="checkbox" name="default" onchange={handleSelection} />
+            <label class="slds-radio__label" for="radio-64">
+              <span class="slds-radio_faux"></span>
+              <span class="slds-form-element__label">Cow</span>
+            </label>
+          </span>
+          <span class="slds-radio">
+            <input type="radio" id="radio-65" value="5" data-id="checkbox" name="default" onchange={handleSelection} />
+            <label class="slds-radio__label" for="radio-65">
+              <span class="slds-radio_faux"></span>
+              <span class="slds-form-element__label">Airopalen</span>
+            </label>
+          </span>
+          <button class="slds-button slds-button_brand" onclick={test_submit} >Submit</button>
+      </div>
+  </div>
+</template>

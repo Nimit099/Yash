@@ -1,0 +1,91 @@
+<!-- <template>
+    <div class="slds-m-top_medium slds-m-bottom_x-large">
+        <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+            Helptext example using a default icon. Mouse over or focus on the icon to view the helptext content.
+        </h2>
+
+        <p class="slds-m-bottom_medium">The tooltip displays on the lower left of the icon or above the icon if space is available. It automatically adjusts its position according to the viewport.</p>
+
+        <div class="slds-p-around_medium lgc-bg">
+            Subscribe
+            <lightning-helptext content="You'll receive weekly updates"></lightning-helptext>
+        </div>
+    </div>
+
+    <div class="slds-m-top_medium slds-m-bottom_x-large">
+        <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+            Helptext example with an alternative icon.
+        </h2>
+
+
+        <div class="slds-p-around_medium lgc-bg">
+            Short Text
+            <lightning-helptext icon-name="utility:salesforce1" content="Full text explanation of feature"></lightning-helptext>
+        </div>
+    </div>
+</template> -->
+
+<template>
+    <lightning-card title="Date Field">
+        <lightning-input type="date" onchange={handleDateChange} label="Enter a date"></lightning-input>
+        <p slot="footer">Date Field Value is:- {dateFieldValue}</p>
+    </lightning-card>
+    <lightning-card title="Date Time Field">
+        <lightning-input type="datetime" onchange={handleDateTimeChange}  label="Enter a date/time value"></lightning-input>
+        <p slot="footer">Date Time Field value is:- {dateTimeFieldValue}</p>
+    </lightning-card>
+    <lightning-card title="Time Field">
+        <lightning-input type="time" onchange={handleTimeChange} label="Enter a time"></lightning-input>
+        <p slot="footer">Time Field value is:- {timeFieldValue}</p>
+    </lightning-card>
+    <lightning-card title="Color Field">
+        <lightning-input type="color" onchange={handleColorChange} label="Favorite color"></lightning-input>
+        <p slot="footer">Color value is:- {colorFieldValue}</p>
+    </lightning-card>
+    <lightning-card title="File Upload Field">
+        <lightning-input type="file" onchange={handleFileChange} label="Attachment"></lightning-input>
+        <p slot="footer">File Name is:- {fileUploadValue}</p>
+    </lightning-card>
+    <lightning-card title="Text Field">
+        <lightning-input type="text" onchange={handleTextChange} label="Enter some text"></lightning-input>
+        <p slot="footer">Text Field Value is:- {textFieldValue}</p>
+    </lightning-card>
+    <lightning-card title="Email Field">
+        <lightning-input type="email" onchange={handleEmailChange} label="E-mail address"></lightning-input>
+        <p slot="footer">Email Field Value is:- {emailFieldValue}</p>
+    </lightning-card>
+    <lightning-card title="password Field">
+        <lightning-input type="password" onchange={handlePasswordChange} label="Enter your password"></lightning-input>
+        <p slot="footer">Password Field Value is:- {passwordFieldValue}</p>
+    </lightning-card>
+    <lightning-card title="Phone Field">
+        <lightning-input type="tel" onchange={handlePhoneChange} label="phone field">
+        </lightning-input>
+        <p slot="footer">Phone Field Value is:- {phoneFieldValue}</p>
+    </lightning-card>
+    <lightning-card title="URL Field">
+        <lightning-input type="url" onchange={handleUrlChange} label="Enter a URL"></lightning-input>
+        <p slot="footer">Url Field Value is:- {urlFieldValue}</p>
+    </lightning-card>
+    <lightning-card title="Numnber Field">
+        <lightning-input type="number" onchange={handleNumberChange} label="Enter a number"></lightning-input>
+        <p slot="footer">Number Field Value is:- {numberFieldValue}</p>
+    </lightning-card>
+    <lightning-card title="checkbox Field">
+        <lightning-input type="checkbox" onchange={handleCheckBoxChange} label="Basic option"></lightning-input>
+        <p slot="footer">Check Box Field Value is:- {checkBoxFieldValue}</p>
+    </lightning-card>
+    <lightning-card title="Checkbox Button Field">
+        <lightning-input type="checkbox-button" onchange={handleCheckBoxButtonChange} label="Input One"></lightning-input>
+        <p slot="footer">Check Box Button Field Value is:- {checkBoxButtonFieldValue}</p>
+    </lightning-card>
+    <lightning-card title="Toggle Field">
+        <lightning-input type="toggle" onchange={handleToggleChange} label="Basic option"></lightning-input>
+        <p slot="footer">Toggle Field Value is:- {toogleFieldValue}</p>
+    </lightning-card>
+    <lightning-card title="Search Field">
+        <lightning-input onchange={handleSearchChange} label="Search when user hits the 'enter' key" type="search">
+        </lightning-input>
+        <p slot="footer">Toggle Field Value is:- {searchFieldValue}</p>
+    </lightning-card>
+</template>

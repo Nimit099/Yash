@@ -1,0 +1,50 @@
+.slide-captcha {
+    color: #fff;
+    font-size: 20px;
+    width: 300px;
+    height: 50px;
+    margin: 0 auto;
+    background: #bdc3c7;
+    box-shadow: inset 0 0 20px #95a5a6;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-text {
+    position: absolute;
+    left: 120px;
+    padding-top: 10px;
+    color: #2c3e50;
+}
+
+.slide-block {
+    width: 100px;
+    height: 50px;
+    background: #34495e;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.processing {
+    background: #3498db;
+    box-shadow: inset 0 0 20px #2980b9;
+}
+
+.done {
+    background: #2ecc71;
+    box-shadow: inset 0 0 20px #27ae60;
+}
+
+.captcha4-done {
+    font-size: 13px;
+    width: 100px;
+    height: 50px;
+    background: rgb(46, 204, 113);
+    border-radius: 15px;
+    padding: 5px;
+    text-align: center;
+}

@@ -1,0 +1,116 @@
+/* =======================================================================================
+MV Clouds Private Limited
+Author:Yash Shah
+Change Version History
+Version No.     Author                 Date                        Change Description   
+    1         Yash Shah              11-01-2023                         create
+========================================================================================== */
+.form-details-output-main{
+    width: 100%;
+    /* margin-left: auto;
+    margin-right: auto; */
+    height: 100%;
+    padding-top: 3%;
+    /* margin-top: 3%; */
+    background-color: #ffffff;
+    /* border: 2px solid #000000; */
+    /* border-radius: 20px; */
+}
+.form-details-output{
+    width: 80%;
+    height: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    /* margin-top: 5%; */
+    background-color:#ffffff;
+    border: solid;
+    border-width: thin;
+    position: relative;
+    /* box-shadow: 10px 15px 15px rgb(139, 131, 131); */
+}
+.form-title{
+    width: 80%;
+    /* background-color: blueviolet; */
+    text-align: center;
+    font-size: 25px;
+    margin-top: 3%;
+    /* margin: auto; */
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: solid;
+    border-width: thin;
+}
+.progres-bar{
+    width: 70%;
+    height: 8%;
+    margin-top: 3%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #ffffff;
+    text-align: center;
+
+}.form-page{
+    width: 90%;
+    height: 55%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 3%;
+    /* margin: auto; */
+    /* padding-top: 5px; */
+    /* margin-bottom: 5px; */
+    border: solid;
+    border-width: thin;
+    box-shadow: 10px 15px 15px rgb(139 131 131);
+    position: relative;
+    
+}
+.page-name{
+    width: 20%;
+    margin-left: 2%;
+    text-align: center;
+    font-size: 20px;
+
+}
+.page-Captcha{
+    width: 100%;
+    height: 25%;
+    margin: auto;
+    margin-top: 25%;
+    background-color:#ffffff;
+    /* text-align: center; */
+    position: absolute;
+    bottom: 5%;
+
+}
+.form-details-output-button{
+    width: 100%;
+    height: 5%;
+    /* margin: auto; */
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: aqua; */
+    position: absolute;
+    bottom: 3%;
+    margin: 0;
+}
+.form-details-output-button-1{
+    width: 315px;
+    margin-right: auto;
+    margin-left: auto;
+    /* background-color: black; */
+}
+.qf-standard-button {
+    height: 34px;
+    width: 142px;
+    border-radius: 30px;
+    background-color: #6699CC;
+    font-size: 15px;
+    color: #ffffff;
+    border: none;
+    margin-right: 15px;
+    align-items: center;
+}
+.test{
+    /* -ms-transform: translateY(-50%); */
+     /* transform: translateY(-50%); */
+}

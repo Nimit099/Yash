@@ -1,0 +1,10 @@
+<template>
+      <div class="element">
+        <button class="testinput" style={rendomcolor}></button>
+      </div>
+      <main class="container-fluid Select" >
+        <div class="element" for:each={pickListValueList} for:item="car" key={car} >
+          <button style={car} class="testinput" data-name={car} onclick={verfication_color_captcha}></button>
+        </div>
+      </main>
+</template>
